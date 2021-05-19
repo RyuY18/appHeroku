@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const http = require('http');
 const PORT = process.env.PORT || 3000;
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.static("public"));
 app.use(express.static("js"));
@@ -24,4 +25,3 @@ app.listen(PORT, function() {
   console.log('start saver!');
 });
 
-localhost: 3000;
