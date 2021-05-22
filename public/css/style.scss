@@ -1,8 +1,21 @@
 $buttonColor: rgb(0, 174, 255);
 $buttonShadow: #073f7a;
+
+h1{
+  color: white;
+   
+   a{
+      & :hover {
+        text-decoration: none;
+    }
+   }
+}
 h2 {
-  font-size: 20px;
-  border-bottom: 2px solid black;
+  margin: 0 20px;
+  font-size: 10px;
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 body {
   display: flex;
@@ -30,6 +43,26 @@ body {
       }
     }
     #sindan2 {
+      border: 1px solid black;
+      padding: 100px 75px;
+      display: inline-block;
+      &:hover {
+        box-shadow: 0px 0px 8px 1px black;
+        transition: all ease 0.5s;
+        margin-top: 2px;
+      }
+    }
+    #sindan3 {
+      border: 1px solid black;
+      padding: 100px 75px;
+      display: inline-block;
+      &:hover {
+        box-shadow: 0px 0px 8px 1px black;
+        transition: all ease 0.5s;
+        margin-top: 2px;
+      }
+    }
+    #sindan4 {
       border: 1px solid black;
       padding: 100px 75px;
       display: inline-block;
